@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DecisionNerve — Graph-native AI decisioning</title>
+  <meta name="description" content="DecisionNerve connects customer signals, context and business rules into a living graph, then uses AI reasoning to determine the next best action." />
+  <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="DecisionNerve — Graph-native AI decisioning" />
+  <meta property="og:description" content="Connected context. Better decisions." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="DecisionNerve home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" role="img" aria-label="DecisionNerve logo">
+            <circle cx="8" cy="21" r="4"></circle><circle cx="21" cy="8" r="4"></circle><circle cx="34" cy="21" r="4"></circle><circle cx="21" cy="34" r="4"></circle>
+            <path d="M11.2 18.1 17.9 11.2M24.1 11.2l6.7 6.9M30.8 23.9l-6.7 6.9M17.9 30.8l-6.7-6.9M12 21h18M21 12v18"></path>
+          </svg>
+        </span>
+        <span>DecisionNerve</span>
+      </a>
+      <div class="nav-links"><a href="#product">Product</a><a href="#architecture">Architecture</a><a href="#about">About</a></div>
+      <a class="button button-ghost nav-cta" href="mailto:keremsah@decisionnerve.com?subject=DecisionNerve%20early%20access">Early access</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> Pre-launch · Prototype</div>
+        <h1>Connected context.<br /><span>Better decisions.</span></h1>
+        <p class="hero-text">DecisionNerve is a graph-native AI decisioning layer for customer experiences. It connects signals, products, offers and business rules into a living context graph — then reasons over that context to determine the next best action.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:keremsah@decisionnerve.com?subject=DecisionNerve%20early%20access">Request early access</a>
+          <a class="text-link" href="#architecture">See how it works <span>↘</span></a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>Graph-native</strong><span>Connected customer context</span></div>
+          <div><strong>AI-reasoned</strong><span>Context-aware decisions</span></div>
+          <div><strong>Explainable</strong><span>Why this action, now</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-label="DecisionNerve graph visualization">
+        <div class="glow"></div>
+        <svg class="graph" viewBox="0 0 640 560" role="img" aria-label="Customer context graph feeding a decision engine">
+          <defs>
+            <linearGradient id="lineGrad" x1="0" x2="1"><stop offset="0%" stop-color="#6ee7ff" stop-opacity=".16"/><stop offset="100%" stop-color="#a78bfa" stop-opacity=".7"/></linearGradient>
+            <filter id="softGlow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <g class="edges" stroke="url(#lineGrad)" stroke-width="2">
+            <path d="M110 110 L290 220"/><path d="M100 290 L290 220"/><path d="M170 445 L290 220"/><path d="M290 220 L450 130"/><path d="M290 220 L495 290"/><path d="M290 220 L430 445"/><path d="M450 130 L540 210"/><path d="M495 290 L540 210"/><path d="M430 445 L540 210"/>
+          </g>
+          <g class="nodes">
+            <g transform="translate(110 110)"><circle r="38"/><text y="5">Signal</text></g>
+            <g transform="translate(100 290)"><circle r="42"/><text y="5">Product</text></g>
+            <g transform="translate(170 445)"><circle r="40"/><text y="5">Offer</text></g>
+            <g class="core" transform="translate(290 220)" filter="url(#softGlow)"><circle r="62"/><text y="-5">Context</text><text y="17">Graph</text></g>
+            <g transform="translate(450 130)"><circle r="43"/><text y="5">Intent</text></g>
+            <g transform="translate(495 290)"><circle r="46"/><text y="5">Policy</text></g>
+            <g transform="translate(430 445)"><circle r="45"/><text y="5">Channel</text></g>
+            <g class="decision" transform="translate(540 210)" filter="url(#softGlow)"><circle r="58"/><text y="-5">Next best</text><text y="17">decision</text></g>
+          </g>
+        </svg>
+        <div class="decision-card float-card"><span class="card-label">Recommended action</span><strong>Retention offer B</strong><p>High intent · Eligible · Mobile preferred</p><div class="confidence"><span style="width:88%"></span></div><small>Reasoning confidence 88%</small></div>
+      </div>
+    </section>
+
+    <section class="section container" id="product">
+      <div class="section-head reveal">
+        <div class="eyebrow">Why DecisionNerve</div>
+        <h2>Customer context is fragmented.<br />Decisions shouldn't be.</h2>
+        <p>Traditional decision engines evaluate isolated rules. DecisionNerve is designed to reason across connected context: who the customer is, what they did, what they own, what they qualify for, and what should happen next.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="feature-icon">◎</div><h3>Context Graph</h3><p>Represent customers, products, offers, events and policies as connected entities — preserving relationships that flat profiles lose.</p></article>
+        <article class="feature-card reveal delay-1"><div class="feature-icon">✦</div><h3>AI Decision Reasoning</h3><p>Use AI reasoning over the resolved context to rank candidate actions and explain why a decision fits this customer, right now.</p></article>
+        <article class="feature-card reveal delay-2"><div class="feature-icon">⌁</div><h3>Guardrails by Design</h3><p>Keep eligibility, suppression and policy constraints deterministic while allowing AI to reason inside clearly defined boundaries.</p></article>
+        <article class="feature-card reveal delay-3"><div class="feature-icon">↯</div><h3>Real-time Activation</h3><p>Return a decision through an API so the next action can be activated across web, mobile, CRM or campaign channels.</p></article>
+      </div>
+    </section>
+
+    <section class="section architecture" id="architecture">
+      <div class="container">
+        <div class="section-head reveal"><div class="eyebrow">Prototype architecture</div><h2>Signals in. Context connected.<br />One decision out.</h2></div>
+        <div class="pipeline reveal">
+          <div class="pipe-card"><span>01</span><strong>Signals</strong><p>Events, profile, transactions, product usage.</p></div><div class="pipe-arrow">→</div>
+          <div class="pipe-card"><span>02</span><strong>Graph</strong><p>Resolve entities, relationships and current context.</p></div><div class="pipe-arrow">→</div>
+          <div class="pipe-card"><span>03</span><strong>Reason</strong><p>Evaluate intent, candidate actions and constraints.</p></div><div class="pipe-arrow">→</div>
+          <div class="pipe-card accent"><span>04</span><strong>Decide</strong><p>Return the next best action with an explanation.</p></div>
+        </div>
+        <div class="example-panel reveal">
+          <div class="example-input"><span class="mono-label">CONTEXT SNAPSHOT</span><pre>{
+  "customer": "C-1042",
+  "signals": ["viewed_upgrade", "support_contact"],
+  "owns": ["Core Plan"],
+  "eligible_for": ["Plus", "Retention B"],
+  "preferred_channel": "mobile"
+}</pre></div>
+          <div class="example-output"><span class="mono-label">DECISION</span><div class="decision-result">Retention B</div><p><strong>Why:</strong> upgrade intent is high, recent support friction increases churn risk, and the customer is eligible for a mobile-first retention offer.</p><div class="tags"><span>eligible</span><span>high intent</span><span>mobile</span><span>retention</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="split reveal"><div><div class="eyebrow">What we're building</div><h2>A decisioning layer that understands relationships, not just rows.</h2></div><div class="split-copy"><p>DecisionNerve is an early-stage product concept currently in prototype. The goal is to combine graph-based context with AI reasoning so teams can build customer decisions that are more contextual, explainable and adaptable.</p><p>The first prototype focuses on next-best-action and next-best-experience use cases for customer engagement.</p></div></div>
+    </section>
+
+    <section class="cta-section container reveal"><div class="cta-card"><div><div class="eyebrow">Early access</div><h2>Building decisioning infrastructure?<br />Let's compare notes.</h2></div><a class="button button-primary" href="mailto:keremsah@decisionnerve.com?subject=DecisionNerve%20early%20access">keremsah@decisionnerve.com</a></div></section>
+  </main>
+
+  <footer class="footer container"><a class="brand" href="#top"><span class="brand-mark mini"><svg viewBox="0 0 42 42"><circle cx="8" cy="21" r="4"></circle><circle cx="21" cy="8" r="4"></circle><circle cx="34" cy="21" r="4"></circle><circle cx="21" cy="34" r="4"></circle><path d="M11.2 18.1 17.9 11.2M24.1 11.2l6.7 6.9M30.8 23.9l-6.7 6.9M17.9 30.8l-6.7-6.9M12 21h18M21 12v18"></path></svg></span><span>DecisionNerve</span></a><p>© <span id="year"></span> DecisionNerve. Pre-launch prototype.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
